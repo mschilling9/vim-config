@@ -1,3 +1,6 @@
 [submodule "pack/default/start/gruvbox"]
 	path = pack/default/start/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule "pack/vendor/start/nerdtree"]
+	path = pack/vendor/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
