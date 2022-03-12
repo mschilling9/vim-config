@@ -191,7 +191,6 @@ endif
 let &t_ut=''
 
 set background=dark
-
 " Use Gruvbox Colorscheme 
 " git clone https://github.com/morhetz/gruvbox.git ~/.vim/pack/default/start/gruvbox 
 autocmd vimenter * ++nested colorscheme gruvbox
