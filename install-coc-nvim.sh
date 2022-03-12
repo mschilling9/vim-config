@@ -15,9 +15,8 @@ fi
 
 # for vim8
 mkdir -p ~/.vim/pack/coc/start
-cd ~/.vim/pack/coc/start
+pushd ~/.vim/pack/coc/start
 curl --fail -L https://github.com/neoclide/coc.nvim/archive/release.tar.gz | tar xzfv -
-cat vimrc | tee -a vimrc-coc
 # for neovim
 # mkdir -p ~/.local/share/nvim/site/pack/coc/start
 # cd ~/.local/share/nvim/site/pack/coc/start
@@ -25,10 +24,17 @@ cat vimrc | tee -a vimrc-coc
 
 # Install extensions
 mkdir -p ~/.config/coc/extensions
-cd ~/.config/coc/extensions
+pushd ~/.config/coc/extensions
 if [ ! -f package.json ]
 then
   echo '{"dependencies":{}}'> package.json
 fi
 # Change extension names to the extensions you need
 npm install coc-snippets --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+popd
+popd
+
+# Add additional vim configurations needed for Coc to run properly
+LINE="source ./vimrc-coc.vim"
+FILE="vimrc"
+grep -qF -- "$LINE" "$FILE" || echo "$LINE" >> "$FILE"
