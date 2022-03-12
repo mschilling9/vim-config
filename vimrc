@@ -194,3 +194,12 @@ set background=dark
 " Use Gruvbox Colorscheme 
 " git clone https://github.com/morhetz/gruvbox.git ~/.vim/pack/default/start/gruvbox 
 autocmd vimenter * ++nested colorscheme gruvbox
+
+" C++ syntax highlighting
+"
+" Enable highlighting of C++11 attributes
+let g:cpp_attributes_highlight = 1
+
+" Put all standard C and C++ keywords under Vim's highlight group 'Statement'
+" (affects both C and C++ files)
+let g:cpp_simple_highlight = 1

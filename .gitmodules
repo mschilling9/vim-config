@@ -16,3 +16,6 @@
 [submodule "pack/plug/start/vim-cmake"]
 	path = pack/plug/start/vim-cmake
 	url = https://github.com/cdelledonne/vim-cmake.git
+[submodule "pack/git-plugins/start/vim-cpp-modern"]
+	path = pack/git-plugins/start/vim-cpp-modern
+	url = https://github.com/bfrg/vim-cpp-modern
