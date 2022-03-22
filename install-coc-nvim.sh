@@ -30,7 +30,6 @@ then
   echo '{"dependencies":{}}'> package.json
 fi
 # Change extension names to the extensions you need
-npm install coc-snippets --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 npm install coc-markdownlint --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 npm install coc-clangd --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 npm install coc-pyright --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
