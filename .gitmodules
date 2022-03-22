@@ -19,3 +19,6 @@
 [submodule "pack/git-plugins/start/vim-cpp-modern"]
 	path = pack/git-plugins/start/vim-cpp-modern
 	url = https://github.com/bfrg/vim-cpp-modern
+[submodule "/Users/mtthwschllng/.vim/pack/plugins/start/vim-polyglot"]
+	path = /Users/mtthwschllng/.vim/pack/plugins/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot

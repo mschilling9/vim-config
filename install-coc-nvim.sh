@@ -31,10 +31,13 @@ then
 fi
 # Change extension names to the extensions you need
 npm install coc-snippets --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+npm install coc-markdownlint --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+npm install coc-clangd --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+npm install coc-pyright --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 popd
 popd
 
 # Add additional vim configurations needed for Coc to run properly
-LINE="source ./vimrc-coc.vim"
+LINE="source ~/.vim/vimrc-coc.vim"
 FILE="vimrc"
 grep -qF -- "$LINE" "$FILE" || echo "$LINE" >> "$FILE"
