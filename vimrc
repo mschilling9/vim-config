@@ -1,5 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Matthew Schilling VIMRC
+"  * Based on https://github.com/amix/vimrc with occasional additions I find
+"    useful.
 "(YMMV)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
